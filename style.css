@@ -1,0 +1,582 @@
+/* ==============================
+   GLOBAL STYLES
+================================ */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', Arial, sans-serif;
+}
+
+
+body{
+    background:#f5f7fb;
+    color:#333;
+    line-height:1.6;
+}
+
+
+/* ==============================
+   HEADER
+================================ */
+
+header{
+
+    background:#0f172a;
+    color:white;
+    padding-bottom:60px;
+
+}
+
+
+
+/* ==============================
+   NAVIGATION
+================================ */
+
+nav{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 10%;
+    width:100%;
+
+}
+
+
+.logo{
+
+    font-size:26px;
+    font-weight:700;
+    color:white;
+
+}
+
+
+/* Menu stays top right */
+
+nav ul{
+
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    gap:30px;
+    list-style:none;
+    margin-left:auto;
+
+}
+
+
+nav ul li a{
+
+    color:white;
+    text-decoration:none;
+    font-size:16px;
+    font-weight:500;
+    transition:0.3s;
+
+}
+
+
+nav ul li a:hover{
+
+    color:#38bdf8;
+
+}
+
+
+
+/* ==============================
+   HERO SECTION
+================================ */
+
+.hero{
+
+    padding:80px 10%;
+
+}
+
+
+.profile-container{
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:60px;
+    max-width:1100px;
+    margin:auto;
+
+}
+
+
+
+.profile-photo{
+
+    width:230px;
+    height:230px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid white;
+
+}
+
+
+
+.hero-content{
+
+    max-width:650px;
+    text-align:left;
+
+}
+
+
+
+.name-title{
+
+    font-size:52px;
+    font-weight:700;
+    color:white;
+    margin-bottom:15px;
+    text-align:left;
+
+}
+
+
+
+.hero-content h2{
+
+    font-size:28px;
+    color:#38bdf8;
+    margin-bottom:20px;
+    text-align:left;
+
+    /* keeps title in one line */
+    white-space:nowrap;
+
+}
+
+
+
+.hero-content p{
+
+    font-size:20px;
+    color:white;
+    line-height:1.7;
+    margin-bottom:25px;
+
+}
+
+
+
+/* ==============================
+   BUTTONS
+================================ */
+
+.hero-buttons{
+
+    display:flex;
+    gap:20px;
+    justify-content:flex-start;
+    margin-top:25px;
+
+}
+
+
+
+.button{
+
+    background:#38bdf8;
+    padding:12px 28px;
+    border-radius:25px;
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+
+}
+
+
+.button:hover{
+
+    transform:translateY(-3px);
+
+}
+
+
+
+.resume-button{
+
+    background:#22c55e;
+
+}
+
+
+
+.resume-button:hover{
+
+    opacity:0.85;
+
+}
+
+
+
+/* ==============================
+   GENERAL SECTIONS
+================================ */
+
+
+section{
+
+    padding:60px 10%;
+
+}
+
+
+
+section h2{
+
+    text-align:center;
+    margin-bottom:35px;
+    font-size:32px;
+    color:#0f172a;
+
+}
+
+
+
+section p{
+
+    font-size:17px;
+
+}
+
+
+
+/* ==============================
+   SKILLS CARDS
+================================ */
+
+
+.cards{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+    gap:25px;
+
+}
+
+
+
+.card{
+
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+
+}
+
+
+
+.card h3{
+
+    color:#0284c7;
+    margin-bottom:15px;
+
+}
+
+
+
+/* ==============================
+   PROJECTS
+================================ */
+
+
+.project{
+
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    margin-bottom:25px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+
+}
+
+
+
+.project h3{
+
+    color:#0284c7;
+    margin-bottom:10px;
+
+}
+
+
+
+.project ul{
+
+    margin-left:25px;
+    margin-top:10px;
+
+}
+
+
+
+/* ==============================
+   EXPERIENCE
+================================ */
+
+
+.timeline{
+
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+
+}
+
+
+
+.timeline h3{
+
+    color:#0284c7;
+    margin-top:25px;
+
+}
+
+
+
+.timeline h4{
+
+    margin-bottom:10px;
+
+}
+
+
+
+/* ==============================
+   EDUCATION
+================================ */
+
+
+#education p{
+
+    background:white;
+    padding:20px;
+    margin-bottom:20px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+
+}
+
+
+
+/* ==============================
+   CONTACT
+================================ */
+
+
+#contact p{
+
+    text-align:center;
+    margin:10px;
+
+}
+
+
+#contact a{
+
+    color:#0284c7;
+    text-decoration:none;
+
+}
+
+
+
+/* ==============================
+   FOOTER
+================================ */
+
+
+footer{
+
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:20px;
+
+}
+
+
+
+/* ==============================
+   MOBILE RESPONSIVE
+================================ */
+
+
+@media(max-width:900px){
+
+
+    .profile-container{
+
+        flex-direction:column;
+        text-align:center;
+
+    }
+
+
+    .hero-content{
+
+        text-align:center;
+
+    }
+
+
+    .name-title{
+
+        font-size:38px;
+        text-align:center;
+
+    }
+
+
+    .hero-content h2{
+
+        font-size:22px;
+        white-space:normal;
+        text-align:center;
+
+    }
+
+
+    .hero-buttons{
+
+        justify-content:center;
+
+    }
+
+}
+
+
+
+@media(max-width:700px){
+
+
+    nav{
+
+        flex-direction:column;
+
+    }
+
+
+    nav ul{
+
+        margin-top:20px;
+        flex-direction:column;
+        align-items:center;
+        gap:15px;
+
+    }
+
+
+    .profile-photo{
+
+        width:180px;
+        height:180px;
+
+    }
+
+
+    .hero{
+
+        padding:50px 20px;
+
+    }
+
+
+    section{
+
+        padding:40px 20px;
+
+    }
+
+
+    .hero-buttons{
+
+        flex-direction:column;
+        align-items:center;
+
+    }
+
+
+    .button{
+
+        width:200px;
+        text-align:center;
+
+    }
+
+
+}
+
+
+/* ==============================
+   MOBILE MENU
+================================ */
+
+.menu-toggle{
+
+    display:none;
+    font-size:30px;
+    cursor:pointer;
+    color:white;
+
+}
+
+
+
+@media(max-width:700px){
+
+
+    nav{
+
+        flex-direction:row;
+        justify-content:space-between;
+
+    }
+
+
+    .menu-toggle{
+
+        display:block;
+
+    }
+
+
+    nav ul{
+
+        display:none;
+        position:absolute;
+        top:75px;
+        right:20px;
+        background:#0f172a;
+        width:220px;
+        padding:20px;
+        border-radius:10px;
+        flex-direction:column;
+        gap:20px;
+
+    }
+
+
+    nav ul.active{
+
+        display:flex;
+
+    }
+
+
+}
