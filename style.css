@@ -1,159 +1,121 @@
+/* ==============================
+   GLOBAL STYLES
+================================ */
+
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Segoe UI',sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', Arial, sans-serif;
 }
 
 
 body{
-background:#f5f7fb;
-color:#333;
-line-height:1.6;
+    background:#f5f7fb;
+    color:#333;
+    line-height:1.6;
 }
 
+
+/* ==============================
+   HEADER
+================================ */
 
 header{
-background:#0f172a;
-color:white;
-padding-bottom:50px;
+
+    background:#0f172a;
+    color:white;
+    padding-bottom:60px;
+
 }
 
+
+
+/* ==============================
+   NAVIGATION
+================================ */
 
 nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 10%;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 10%;
+    width:100%;
+
 }
 
+
+.logo{
+
+    font-size:26px;
+    font-weight:700;
+    color:white;
+
+}
+
+
+/* Menu stays top right */
 
 nav ul{
-display:flex;
-gap:25px;
-list-style:none;
+
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    gap:30px;
+    list-style:none;
+    margin-left:auto;
+
 }
 
 
-nav a{
-color:white;
-text-decoration:none;
+nav ul li a{
+
+    color:white;
+    text-decoration:none;
+    font-size:16px;
+    font-weight:500;
+    transition:0.3s;
+
 }
 
+
+nav ul li a:hover{
+
+    color:#38bdf8;
+
+}
+
+
+
+/* ==============================
+   HERO SECTION
+================================ */
 
 .hero{
-text-align:center;
-padding:80px 20px;
-}
 
-
-.hero h1{
-font-size:42px;
-}
-
-
-.hero p{
-font-size:20px;
-margin:20px auto;
-max-width:700px;
-}
-
-
-.button{
-background:#38bdf8;
-padding:12px 25px;
-border-radius:25px;
-color:white;
-text-decoration:none;
-}
-
-
-section{
-padding:60px 10%;
-}
-
-
-h2{
-text-align:center;
-margin-bottom:30px;
-font-size:32px;
-color:#0f172a;
-}
-
-
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
-}
-
-
-.card,
-.project,
-.timeline{
-background:white;
-padding:25px;
-border-radius:12px;
-box-shadow:0 5px 15px rgba(0,0,0,.08);
-}
-
-
-.project{
-margin-bottom:25px;
-}
-
-
-.project ul{
-margin-left:20px;
-}
-
-
-.timeline h3{
-color:#0284c7;
-margin-top:20px;
-}
-
-
-footer{
-background:#0f172a;
-color:white;
-text-align:center;
-padding:20px;
-}
-
-
-
-@media(max-width:700px){
-
-nav{
-flex-direction:column;
-}
-
-nav ul{
-margin-top:15px;
-flex-direction:column;
-}
-
-.hero h1{
-font-size:30px;
-}
+    padding:80px 10%;
 
 }
+
 
 .profile-container{
+
     display:flex;
     align-items:center;
     justify-content:center;
-    gap:50px;
-    max-width:1000px;
+    gap:60px;
+    max-width:1100px;
     margin:auto;
+
 }
+
 
 
 .profile-photo{
 
-    width:220px;
-    height:220px;
+    width:230px;
+    height:230px;
     border-radius:50%;
     object-fit:cover;
     border:5px solid white;
@@ -161,40 +123,56 @@ font-size:30px;
 }
 
 
+
 .hero-content{
 
-    max-width:600px;
+    max-width:650px;
     text-align:left;
 
 }
 
 
-@media(max-width:700px){
 
-.profile-container{
+.name-title{
 
-    flex-direction:column;
-    text-align:center;
-
-}
-
-
-.hero-content{
-
-    text-align:center;
+    font-size:52px;
+    font-weight:700;
+    color:white;
+    margin-bottom:15px;
+    text-align:left;
 
 }
 
 
-.profile-photo{
 
-    width:180px;
-    height:180px;
+.hero-content h2{
+
+    font-size:28px;
+    color:#38bdf8;
+    margin-bottom:20px;
+    text-align:left;
+
+    /* keeps title in one line */
+    white-space:nowrap;
 
 }
 
+
+
+.hero-content p{
+
+    font-size:20px;
+    color:white;
+    line-height:1.7;
+    margin-bottom:25px;
+
 }
-/* Resume Download Button */
+
+
+
+/* ==============================
+   BUTTONS
+================================ */
 
 .hero-buttons{
 
@@ -206,11 +184,34 @@ font-size:30px;
 }
 
 
+
+.button{
+
+    background:#38bdf8;
+    padding:12px 28px;
+    border-radius:25px;
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+
+}
+
+
+.button:hover{
+
+    transform:translateY(-3px);
+
+}
+
+
+
 .resume-button{
 
     background:#22c55e;
 
 }
+
 
 
 .resume-button:hover{
@@ -220,14 +221,303 @@ font-size:30px;
 }
 
 
-@media(max-width:700px){
+
+/* ==============================
+   GENERAL SECTIONS
+================================ */
+
+
+section{
+
+    padding:60px 10%;
+
+}
+
+
+
+section h2{
+
+    text-align:center;
+    margin-bottom:35px;
+    font-size:32px;
+    color:#0f172a;
+
+}
+
+
+
+section p{
+
+    font-size:17px;
+
+}
+
+
+
+/* ==============================
+   SKILLS CARDS
+================================ */
+
+
+.cards{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+    gap:25px;
+
+}
+
+
+
+.card{
+
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+
+}
+
+
+
+.card h3{
+
+    color:#0284c7;
+    margin-bottom:15px;
+
+}
+
+
+
+/* ==============================
+   PROJECTS
+================================ */
+
+
+.project{
+
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    margin-bottom:25px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+
+}
+
+
+
+.project h3{
+
+    color:#0284c7;
+    margin-bottom:10px;
+
+}
+
+
+
+.project ul{
+
+    margin-left:25px;
+    margin-top:10px;
+
+}
+
+
+
+/* ==============================
+   EXPERIENCE
+================================ */
+
+
+.timeline{
+
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+
+}
+
+
+
+.timeline h3{
+
+    color:#0284c7;
+    margin-top:25px;
+
+}
+
+
+
+.timeline h4{
+
+    margin-bottom:10px;
+
+}
+
+
+
+/* ==============================
+   EDUCATION
+================================ */
+
+
+#education p{
+
+    background:white;
+    padding:20px;
+    margin-bottom:20px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+
+}
+
+
+
+/* ==============================
+   CONTACT
+================================ */
+
+
+#contact p{
+
+    text-align:center;
+    margin:10px;
+
+}
+
+
+#contact a{
+
+    color:#0284c7;
+    text-decoration:none;
+
+}
+
+
+
+/* ==============================
+   FOOTER
+================================ */
+
+
+footer{
+
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:20px;
+
+}
+
+
+
+/* ==============================
+   MOBILE RESPONSIVE
+================================ */
+
+
+@media(max-width:900px){
+
+
+    .profile-container{
+
+        flex-direction:column;
+        text-align:center;
+
+    }
+
+
+    .hero-content{
+
+        text-align:center;
+
+    }
+
+
+    .name-title{
+
+        font-size:38px;
+        text-align:center;
+
+    }
+
+
+    .hero-content h2{
+
+        font-size:22px;
+        white-space:normal;
+        text-align:center;
+
+    }
+
 
     .hero-buttons{
 
         justify-content:center;
+
+    }
+
+}
+
+
+
+@media(max-width:700px){
+
+
+    nav{
+
+        flex-direction:column;
+
+    }
+
+
+    nav ul{
+
+        margin-top:20px;
+        flex-direction:column;
+        align-items:center;
+        gap:15px;
+
+    }
+
+
+    .profile-photo{
+
+        width:180px;
+        height:180px;
+
+    }
+
+
+    .hero{
+
+        padding:50px 20px;
+
+    }
+
+
+    section{
+
+        padding:40px 20px;
+
+    }
+
+
+    .hero-buttons{
+
         flex-direction:column;
         align-items:center;
 
     }
+
+
+    .button{
+
+        width:200px;
+        text-align:center;
+
+    }
+
 
 }
